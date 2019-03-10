@@ -7,5 +7,6 @@ Please expect bugs, and let me know if you find any!
 
 Things to be implimented:
 
-Roulette Game
-Waifu DataBase
+*Roulette Game
+
+*Waifu DataBase
