@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+version '1.0'
+
+sourceCompatibility = targetCompatibility = 1.8
+
+repositories {
+    
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile "net.dv8tion:JDA:3.8.3_460"
+    //JDA-Command dependency
+    compile 'com.github.Comportment:JDA-Command:1.0.7'
+    //JDA dependency
+    compile group: 'net.dv8tion', name: 'JDA', version: '3.1.0_206'
+}
+
+compileJava.options.encoding = 'UTF-8'
