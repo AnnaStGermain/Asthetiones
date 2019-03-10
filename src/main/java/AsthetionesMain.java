@@ -13,7 +13,7 @@ public class AsthetionesMain extends ListenerAdapter {
 
     public static void main(String[] args) throws LoginException{
         JDABuilder builder = new JDABuilder(AccountType.BOT);
-        String token = "NTQ4NzIwMTQ2Nzg1NjMyMjU2.D1Jhsw.6EW_9aF1YifM42RZcny7Is0YG-g";
+        String token = " ";
         builder.setToken(token);
 
         builder.addEventListener(
