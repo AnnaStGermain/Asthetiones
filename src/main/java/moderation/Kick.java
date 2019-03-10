@@ -8,7 +8,7 @@ import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 import java.util.List;
 
-public class Moderation extends ListenerAdapter {
+public class Kick extends ListenerAdapter {
 
     public void onMessageReceived(MessageReceivedEvent event) {
 
