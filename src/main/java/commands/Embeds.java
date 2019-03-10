@@ -27,6 +27,7 @@ public class Embeds extends ListenerAdapter {
                 embed.setDescription("+ and the command name to trigger the command.");
                 embed.addField("Informaton", "owner", true);
                 embed.addField("Fun", "ping, ravedog", true);
+                embed.addField("Moderation", "kick", true);
                 message.getChannel().sendMessage(embed.build()).complete();
 
             } else if (msg.equalsIgnoreCase("+owner")) {
