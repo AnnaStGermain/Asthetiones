@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+    compile 'com.jagrosh:jda-utilities:2.1.5'
     compile "net.dv8tion:JDA:3.8.3_460"
     //JDA-Command dependency
     compile 'com.github.Comportment:JDA-Command:1.0.7'

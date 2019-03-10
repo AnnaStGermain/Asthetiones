@@ -12,10 +12,12 @@ public class Kick extends ListenerAdapter {
 
     public void onMessageReceived(MessageReceivedEvent event) {
 
+        String prefix = "+";
+
         Message message = event.getMessage();
         String msg = message.getContentDisplay();
         MessageChannel channel = event.getChannel();
-        if (msg.startsWith("+kick")) {
+        if (msg.startsWith(prefix + "kick")) {
             if (message.isFromType(ChannelType.TEXT)) {
 
                 if (message.getMentionedUsers().isEmpty()) {

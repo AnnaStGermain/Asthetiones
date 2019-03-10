@@ -12,6 +12,7 @@ public class Embeds extends ListenerAdapter {
 
 
     public void onMessageReceived(MessageReceivedEvent event) {
+        String prefix = "+";
 
         Message message = event.getMessage();
         String msg = message.getContentDisplay();
@@ -19,7 +20,7 @@ public class Embeds extends ListenerAdapter {
 
         if (event.isFromType(ChannelType.TEXT)) {
 
-            if (msg.equalsIgnoreCase("+help")) {
+            if (msg.equalsIgnoreCase(prefix +"help")) {
 
                 embed.setAuthor(null, null, null);
                 embed.setTitle("Asthetiones Commands");
@@ -30,7 +31,7 @@ public class Embeds extends ListenerAdapter {
                 embed.addField("Moderation", "kick", true);
                 message.getChannel().sendMessage(embed.build()).complete();
 
-            } else if (msg.equalsIgnoreCase("+owner")) {
+            } else if (msg.equalsIgnoreCase(prefix + "owner")) {
 
                 embed.setTitle("Asthetiones");
                 embed.setThumbnail("https://cdn.discordapp.com/emojis/549677453266649108.gif?v=1");
