@@ -6,9 +6,8 @@ import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 import javax.security.auth.login.LoginException;
 import commands.Embeds;
-import commands.ImageCommands;
 import commands.Misc;
-import commands.Moderation;
+import moderation.Kick;
 
 public class AsthetionesMain extends ListenerAdapter {
 
@@ -20,9 +19,8 @@ public class AsthetionesMain extends ListenerAdapter {
         builder.addEventListener(
                 new AsthetionesMain(),
                 new Embeds(),
-                new ImageCommands(),
                 new Misc(),
-                new Moderation()
+                new Kick()
         );
         builder.setGame(Game.playing("+help to see commands"));
         builder.buildAsync();
