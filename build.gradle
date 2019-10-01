@@ -13,12 +13,12 @@ repositories {
 }
 
 dependencies {
-    compile 'com.jagrosh:jda-utilities:2.1.5'
-    compile "net.dv8tion:JDA:3.8.3_460"
+    compile 'com.jagrosh:jda-utilities:3.0.2'
+    compile "net.dv8tion:JDA:4.0.0_50"
     //JDA-Command dependency
     compile 'com.github.Comportment:JDA-Command:1.0.7'
     //JDA dependency
-    compile group: 'net.dv8tion', name: 'JDA', version: '3.1.0_206'
+    compile group: 'net.dv8tion', name: 'JDA', version: '4.0.0_50'
 }
 
 compileJava.options.encoding = 'UTF-8'

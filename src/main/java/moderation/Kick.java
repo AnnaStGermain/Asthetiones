@@ -1,10 +1,10 @@
 package moderation;
 
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.*;
-import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.core.exceptions.PermissionException;
-import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.exceptions.PermissionException;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import java.util.List;
 
@@ -47,7 +47,7 @@ public class Kick extends ListenerAdapter {
                             continue;
                         }
 
-                        guild.getController().kick(member).queue(
+                        guild.kick(member).queue(
                                 success -> channel.sendMessage("Kicked ").append(member.getEffectiveName()).append(".").queue(),
                                 error ->
                                 {
